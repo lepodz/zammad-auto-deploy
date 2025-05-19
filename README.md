@@ -40,3 +40,4 @@ Elasticsearch is an optional, but strongly recommended dependency for Zammad. Mo
 
 Elasticsearch is enabled by default in the example `docker-compose.yml` file. It is also by default required to run the "zammad-init" command. Disabling Elasticsearch is possible by setting a special environment variable: `ELASTICSEARCH_ENABLED=false` and loading
 the scenario [disable-elasticsearch-service.yml](scenarios/disable-elasticsearch-service.yml).
+# retry
