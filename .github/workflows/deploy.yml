@@ -21,7 +21,7 @@ jobs:
       - name: Deploy to VM
         run: |
           ssh -o StrictHostKeyChecking=no ${{ secrets.USERNAME }}@${{ secrets.HOST }} '
-            cd ~/zammad-docker-compose &&
+            cd /root/zammad-docker-compose &&
             git pull origin main &&
             docker-compose pull &&
             docker-compose up -d
