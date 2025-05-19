@@ -23,6 +23,6 @@ jobs:
           ssh -o StrictHostKeyChecking=no ${{ secrets.USERNAME }}@${{ secrets.HOST }} '
             cd /root/zammad-auto-deploy &&
             git pull origin main &&
-            docker compose pull &&
-            docker compose up -d
+            docker compose -f docker-compose.yml -f monitoring/docker-compose.monitoring.yml pull &&
+            docker compose -f docker-compose.yml -f monitoring/docker-compose.monitoring.yml up -d
           '
