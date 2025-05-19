@@ -47,3 +47,4 @@ the scenario [disable-elasticsearch-service.yml](scenarios/disable-elasticsearch
 # retry
 # deploy fix test
 # deploy SSH test
+# test docker compose v2
