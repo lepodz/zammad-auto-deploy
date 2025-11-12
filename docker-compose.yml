@@ -71,7 +71,7 @@ services:
     user: 0:0
 
   zammad-elasticsearch:
-    image: bitnami/elasticsearch:${ELASTICSEARCH_VERSION:-8.18.0}
+    image: docker.elastic.co/elasticsearch/elasticsearch:${ELASTICSEARCH_VERSION:-8.18.0}
     restart: ${RESTART:-always}
     volumes:
       - elasticsearch-data:/bitnami/elasticsearch/data
