@@ -24,7 +24,7 @@ services:
     image: gcr.io/cadvisor/cadvisor:latest
     ports:
       - "8081:8080"
-   volumes:
+  volumes:
       - /:/rootfs:ro
       - /var/run:/var/run:ro
       - /sys:/sys:ro
@@ -32,7 +32,6 @@ services:
         source: ${DOCKER_ROOT_DIR}
         target: /var/lib/docker
         read_only: true
-    restart: unless-stopped
 
 volumes:
   grafana-storage:
